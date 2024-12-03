@@ -47,6 +47,7 @@ async function run() {
   core.startGroup('install lnd');
   const lndVersion = LND_VERSION || 'v0.18.3-beta';
   const lndArchive = `lnd-darwin-arm64-${lndVersion}.tar.gz`;
+  console.info(lndUrl)
   const lndUrl = `https://github.com/lightningnetwork/lnd/releases/download/${lndVersion}/${lndArchive}`;
   
   await exec.exec(`curl -L -o ${lndArchive} ${lndUrl}`);
