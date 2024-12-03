@@ -1,0 +1,14 @@
+{
+  "name": "bitcoin-regtest-macos",
+  "version": "0.0.1",
+  "description": "Setup bitcoind, lnd and electrum server in regtest mode",
+  "main": "index.js",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/exec": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "author": "Ivan Vershigora",
+  "license": "MIT"
+}
