@@ -41,7 +41,7 @@ async function run() {
   }
 
   core.startGroup('install bitcoind');
-  await exec.exec('brew install bitcoind');
+  await exec.exec('brew install --cask bitcoin-core');
   core.endGroup();
 
   core.startGroup('install lnd');
