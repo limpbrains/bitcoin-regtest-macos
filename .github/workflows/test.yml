@@ -1,0 +1,15 @@
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 4'
+
+name: Test
+
+jobs:
+  regtest:
+    name: Regtest
+    runs-on: macos-15
+    steps:
+      - uses: limpbrains/bitcoin-regtest-macos@master

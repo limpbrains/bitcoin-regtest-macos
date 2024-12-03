@@ -1,0 +1,19 @@
+name: 'bitcoin-regtest'
+description: 'Setup bitcoind, lnd and electrum server in regtest mode'
+author: 'Ivan Vershigora'
+inputs:
+  bitcoind-version:
+    description: 'Version of bitcoind to install'
+    required: false
+    default: '26.0'
+  lnd-version:
+    description: 'Version of lnd to install'
+    required: false
+    default: '0.18.0-beta'
+  electrs-version:
+    description: 'Version of electrs to install'
+    required: false
+    default: '0.10.2'
+runs:
+  using: 'node20'
+  main: 'index.js'
